@@ -40,6 +40,12 @@ const EstiloGlobal = createGlobalStyle`
   .strong{
     font-family: "PoppinsMedium";
   }
+  .esconder{
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    left: -999px;
+  }
 `;
 
 export default EstiloGlobal;

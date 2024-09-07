@@ -5,6 +5,8 @@ import styled from "styled-components";
 import Perfil from "../Components/Layout/Perfil";
 import Navegacao from "../Components/Layout/Navegacao";
 import { Container } from "../Components/Common/Container";
+import Rodape from "../Components/Layout/Rodape";
+import Sobre from "./Sobre";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -22,7 +24,9 @@ const AppRotas = ()=>{
           <Navegacao />
           <Routes>
             <Route path="/" element={ <Home /> } />
+            <Route path="/sobre" element={ <Sobre /> } />
           </Routes>
+          <Rodape />
         </Container>
       </AppContainer>
     </BrowserRouter>

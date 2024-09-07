@@ -9,11 +9,17 @@ const ListaNav = styled.ul`
   display: flex;
   align-items: center;
   gap: 20px;
-  
-  .lista-nav-item{
+
+  .nav-lista-link{
+    display : block ;
     font-family: "PoppinsBold";
     color: #495057;
     cursor: pointer;
+    padding: .5rem;
+  }
+
+  .ativo{
+    border-bottom: 3px solid #09b1d9;
   }
 `;
 
@@ -21,9 +27,9 @@ const Navegacao = ()=> {
   return(
     <Nav>
       <ListaNav>
-        <li className="lista-nav-item"><Link to='/' />Projetos</li>
-        <li className="lista-nav-item"><Link to='/sobre' />Sobre</li>
-        <li className="lista-nav-item"><Link to='/experiencias' />Experiências</li>
+        <li className="ativo"><Link className="nav-lista-link" to="/" >Projetos</Link></li>
+        <li><Link className="nav-lista-link" to="/sobre" >Sobre</Link></li>
+        <li><Link className="nav-lista-link" to='/experiencias' >Experiências</Link></li>
       </ListaNav>
     </Nav>
   );
