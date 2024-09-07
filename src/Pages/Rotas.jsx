@@ -3,6 +3,8 @@ import Cabecalho from "../Components/Layout/Cabecalho";
 import Home from "./Home";
 import styled from "styled-components";
 import Perfil from "../Components/Layout/Perfil";
+import Navegacao from "../Components/Layout/Navegacao";
+import { Container } from "../Components/Common/Container";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -16,9 +18,12 @@ const AppRotas = ()=>{
       <Cabecalho />
       <AppContainer>
         <Perfil />
-        <Routes>
-          <Route path="/" element={ <Home /> } />
-        </Routes>
+        <Container>
+          <Navegacao />
+          <Routes>
+            <Route path="/" element={ <Home /> } />
+          </Routes>
+        </Container>
       </AppContainer>
     </BrowserRouter>
   );

@@ -2,6 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import RobotoThin from "../Fonts/Roboto/Roboto-Thin.ttf";
 import PoppinsMedium from "../Fonts/Poppins/Poppins-Medium.ttf";
 import PoppinsLight from "../Fonts/Poppins/Poppins-Light.ttf";
+import PoppinsBold from "../Fonts/Poppins/Poppins-Bold.ttf";
 
 const EstiloGlobal = createGlobalStyle`  
 
@@ -19,6 +20,11 @@ const EstiloGlobal = createGlobalStyle`
     font-family: "PoppinsMedium";
     src: local("PoppinsMedium"), local("Roboto Medium"), url(${PoppinsMedium});
   }
+ 
+  @font-face {
+    font-family: "PoppinsBold";
+    src: local("PoppinsBold"), local("Roboto Bold"), url(${PoppinsBold});
+  }
 
   *{
     padding: 0;
@@ -28,7 +34,6 @@ const EstiloGlobal = createGlobalStyle`
     text-transform: none;
     font-size: 14px;
     font-family: "PoppinsLight";
-    letter-spacing:1px;
     font-style: none;
     text-decoration: none;
   }
