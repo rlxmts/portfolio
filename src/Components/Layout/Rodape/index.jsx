@@ -17,6 +17,10 @@ const ListaFooter = styled.ul`
 
   a{
     color: #495057;
+
+    &:hover{
+      color: #09B1D9;
+    }
   }
 `;
 
