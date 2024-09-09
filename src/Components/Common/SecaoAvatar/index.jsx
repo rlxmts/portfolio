@@ -11,9 +11,9 @@ const Imagem = styled.img`
   top: -80px;
 
   @media screen and (max-width: 600px){
-    width: 80px;
-    height: 80px;
-    top: -40px;
+    width: 100px;
+    height: 100px;
+    top: -50px;
   }
 `;
 

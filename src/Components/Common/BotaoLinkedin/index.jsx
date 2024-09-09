@@ -22,6 +22,10 @@ const Link = styled.a`
     border-left: 1px solid #ffffff7b;
     padding-left: .5rem;
   }
+
+  @media screen and (max-width: 600px){
+    margin: 5px 0;
+  }
 `;
 
 // eslint-disable-next-line react/prop-types
