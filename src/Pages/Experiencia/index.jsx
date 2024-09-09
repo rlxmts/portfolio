@@ -8,7 +8,8 @@ const Experiencias = () => {
       <TituloPagina>Experiências:</TituloPagina>
 
       <h3>Empresa:</h3>
-      <p>Horbiti - Marca criada por mim em 2020.</p>
+      <p>Horbiti - 2020 - Atualmente.</p>
+      <p>Horbiti é uma marca criada por mim focada na criação de sites e e-commerce.</p>
       <br></br>
       <h3>Cargo:</h3>
       <p>Freelance / Proprietário</p>
