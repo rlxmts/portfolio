@@ -17,6 +17,7 @@ const ListaNav = styled.ul`
     color: #495057;
     cursor: pointer;
     padding: .5rem;
+    border-bottom: 3px solid transparent;
   }
 
   .ativo{

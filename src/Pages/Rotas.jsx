@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cabecalho from "../Components/Layout/Cabecalho";
-import Home from "./Home";
 import styled from "styled-components";
 import Perfil from "../Components/Layout/Perfil";
 import Navegacao from "../Components/Layout/Navegacao";
@@ -8,6 +7,7 @@ import { Container } from "../Components/Common/Container";
 import Rodape from "../Components/Layout/Rodape";
 import Sobre from "./Sobre";
 import Experiencias from "./Experiencia";
+import Projetos from "./Projetos";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -24,7 +24,7 @@ const AppRotas = ()=>{
         <Container>
           <Navegacao />
           <Routes>
-            <Route path="/" element={ <Home /> } />
+            <Route path="/" element={ <Projetos /> } />
             <Route path="/sobre" element={ <Sobre /> } />
             <Route path="/experiencias" element={ <Experiencias /> } />
           </Routes>
