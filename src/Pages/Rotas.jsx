@@ -7,6 +7,7 @@ import Navegacao from "../Components/Layout/Navegacao";
 import { Container } from "../Components/Common/Container";
 import Rodape from "../Components/Layout/Rodape";
 import Sobre from "./Sobre";
+import Experiencias from "./Experiencia";
 
 const AppContainer = styled.div`
   width: 100%;
@@ -25,6 +26,7 @@ const AppRotas = ()=>{
           <Routes>
             <Route path="/" element={ <Home /> } />
             <Route path="/sobre" element={ <Sobre /> } />
+            <Route path="/experiencias" element={ <Experiencias /> } />
           </Routes>
           <Rodape />
         </Container>

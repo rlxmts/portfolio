@@ -28,7 +28,7 @@ const LinksRapidos = () => {
   return(
     <ListaLinks>
       <li>
-        <a href="#"><HiOutlineBriefcase size="20" />Disponível </a>
+        <a href="#"><HiOutlineBriefcase size="20" />Opentowork </a>
       </li>
       <li>
         <a href="tel:+5521991537608" target="_blank" rel="noopener noreferrer"><MdOutlinePhone size="17" />(21) 99153-7608 </a>
