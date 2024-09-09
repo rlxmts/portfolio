@@ -25,24 +25,21 @@ const ListaNav = styled.ul`
 `;
 
 const Navegacao = ()=> {
-
   const links = [
     {
       nome: "Projetos",
-      url: "/",
-      classe: ""
+      url: "/"
     },
     {
       nome: "Sobre",
-      url: "sobre",
-      classe: ""
+      url: "sobre"
     },
     {
       nome: "Experiências",
-      url: "experiencias",
-      classe:""
+      url: "experiencias"
     }
   ];
+
   return(
     <Nav>
       <ListaNav>
