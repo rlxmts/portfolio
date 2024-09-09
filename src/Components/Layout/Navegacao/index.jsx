@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import classNames from "classnames";
 
 const Nav = styled.nav`
   padding: 2rem 0;
@@ -24,12 +25,32 @@ const ListaNav = styled.ul`
 `;
 
 const Navegacao = ()=> {
+
+  const links = [
+    {
+      nome: "Projetos",
+      url: "/",
+      classe: ""
+    },
+    {
+      nome: "Sobre",
+      url: "sobre",
+      classe: ""
+    },
+    {
+      nome: "Experiências",
+      url: "experiencias",
+      classe:""
+    }
+  ];
   return(
     <Nav>
       <ListaNav>
-        <li className="ativo"><Link className="nav-lista-link" to="/" >Projetos</Link></li>
-        <li><Link className="nav-lista-link" to="/sobre" >Sobre</Link></li>
-        <li><Link className="nav-lista-link" to='/experiencias' >Experiências</Link></li>
+        {links.map(item => {
+          return(
+            <li key={item.nome}><NavLink className={ ({isActive}) => classNames("nav-lista-link", isActive ? "ativo" : "") } to={item.url} >{item.nome}</NavLink></li> 
+          );
+        })}
       </ListaNav>
     </Nav>
   );
