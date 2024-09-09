@@ -9,6 +9,12 @@ const Imagem = styled.img`
   border: 3px solid #000000;
   position: absolute;
   top: -80px;
+
+  @media screen and (max-width: 600px){
+    width: 80px;
+    height: 80px;
+    top: -40px;
+  }
 `;
 
 const Div = styled.div`
