@@ -28,8 +28,8 @@ const Sobre = ()=> {
       <p className="opentowork">#Opentowork</p>
       <p>Desenvolvedor Front-end com 4 anos de experiencia como <strong className="strong">Freelance</strong> na <LinkExterno href="https://horbiti.vercel.app" target="_blank" rel="noopener noreferrer">Horbiti</LinkExterno>. A principio desenvolvia soluções em <strong className="strong">WordPress (Elementor PRO, CSS, HTML)</strong>.</p><br></br>
       <p>Atualmente, meu foco está em desenvolvimento com <strong className="strong">JavaScript</strong>, e estou em busca da minha primeira oportunidade no mercado de trabalho.</p>
-      <p>Estou cursando <strong className="strong">Analise e Desenvovimento de Sistemas</strong> no Centro Universitário IBMR e veja um Estágio com bons olhos.</p><br></br>
-      <p> Quero construir uma carreira na área que me motiva a evoluir todos os dias. A programação é a única atividade capaz de me fazer estudar e me dedicar por tantas horas, durante tanto tempo. Foi a programação que me fez acreditar que é possível trabalhar com o que se ama e sentir prazer em se qualificar para alcançar voos maiores. </p>
+      <p>Estou cursando <strong className="strong">Analise e Desenvovimento de Sistemas</strong> no Centro Universitário IBMR e vejo um Estágio com bons olhos.</p><br></br>
+      <p> Quero construir uma carreira na área que me motiva a evoluir todos os dias. Programação é a única atividade capaz de me fazer estudar e me dedicar por tantas horas, durante tanto tempo. Foi a programação que me fez acreditar que é possível trabalhar com o que se ama e sentir prazer em se qualificar para alcançar voos maiores. </p>
 
       <TituloSecao>Skills:</TituloSecao> 
       <ul>
