@@ -11,6 +11,7 @@ const SecaoProjetos = styled.section`
     flex-direction: column;
     gap: 10px;
     padding: 1rem;
+    margin-bottom: 5rem;
   }
 
   .nome{
@@ -31,6 +32,7 @@ const SecaoProjetos = styled.section`
 
     img{
       width: 100%;
+      height: 100%;
     }
 
     @media screen and (max-width: 500px){
