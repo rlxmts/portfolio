@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import FotoPerfil from "../../Components/Common/FotoPerfil";
-import fotoClima from "../../assets/Imagens/clima.jpg";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
+import { useBuscaProjetos } from "../../Hooks/useBuscaProjetos";
 
 const SecaoProjetos = styled.section`
 
@@ -28,10 +28,10 @@ const SecaoProjetos = styled.section`
     display: block;
     height: 300px;
     width: 100%;
-    background-image: url(${fotoClima});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    img{
+      width: 100%;
+    }
 
     @media screen and (max-width: 500px){
       height: 200px;
@@ -46,22 +46,36 @@ const SecaoProjetos = styled.section`
 `;
 
 const Projetos = () => {
+
+  const {projetos, carregando, erro} = useBuscaProjetos();
+
+  if(carregando)return <p>Carregando...</p>;
+
+  if(erro) return <p>{erro}</p>;
+
   return(
     <SecaoProjetos>
-      <div className="card">
-        <div className="nome">
-          <FotoPerfil />
-          <h4>rlxmts</h4>
-        </div>
-        <div  className="imagem"></div>
-        <div className="icons">
-          <MdOutlineRemoveRedEye size={25} />
-          <FaGithub size={20} />
-        </div>
-        <div>
-          <span> App de Precisão do tempo. 🌡️</span>
-        </div>
-      </div>
+      {projetos.map(item => {
+        return(
+          <div className="card" key={item._id}>
+            <div className="nome">
+              <FotoPerfil />
+              <h4>rlxmts</h4>
+            </div>
+            <div  className="imagem">
+              <img src={item.imagem} alt={item.titulo}/>
+            </div>
+            <div className="icons">
+              <a href="#"><MdOutlineRemoveRedEye size={25} /></a>
+              <a href="#"><FaGithub size={20} /></a>        
+            </div>
+            <div>
+              <span> {item.titulo}</span>
+              <p>{item.texto}</p>
+            </div>
+          </div>
+        );
+      })}
     </SecaoProjetos>
   );
 };
