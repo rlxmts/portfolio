@@ -62,16 +62,16 @@ const Projetos = () => {
               <FotoPerfil />
               <h4>rlxmts</h4>
             </div>
-            <div  className="imagem">
-              <img src={item.imagem} alt={item.titulo}/>
-            </div>
-            <div className="icons">
-              <a href="#"><MdOutlineRemoveRedEye size={25} /></a>
-              <a href="#"><FaGithub size={20} /></a>        
-            </div>
             <div>
               <span> {item.titulo}</span>
               <p>{item.texto}</p>
+            </div>
+            <div  className="imagem">
+              <img src={item.imagem} alt={item.titulo}/>
+              <div className="icons">
+                <a href={item.deploy} target="_blank" rel="noopener noreferrer"><MdOutlineRemoveRedEye size={25} /></a>
+                <a href={item.repositorio} target="_blank" rel="noopener noreferrer"><FaGithub size={20} /></a>        
+              </div>
             </div>
           </div>
         );
