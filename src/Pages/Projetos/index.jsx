@@ -11,7 +11,7 @@ const SecaoProjetos = styled.section`
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
   }
 
   .nome{
@@ -62,12 +62,12 @@ const SecaoProjetos = styled.section`
       width: 100%;
       height: 100%;
     }
-
+    
     @media screen and (max-width: 500px){
       height: 200px;
     }
   }
-
+  
   .icons{
     display: flex;
     align-items: center;
@@ -82,6 +82,22 @@ const SecaoProjetos = styled.section`
     
     span{
       font-family: "PoppinsMedium";
+    }
+  }
+
+  .lista-tags{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 5px;
+
+    .tag{
+      background-color: #022f3a;
+      font-size: 10px;
+      font-family: "PoppinsMedium";
+      padding: 3px 15px;
+      color: #FFFFFF;
+      border-radius: 5px;
+      margin-bottom: 5px;
     }
   }
 `;
@@ -127,6 +143,15 @@ const Projetos = () => {
   
             <figure className="imagem">
               <img src={item.imagem} alt={`Imagem do projeto ${item.titulo}`} />
+              <div>
+                <ul className="lista-tags">
+                  {item.tags.map(tag => {
+                    return(
+                      <li className="tag" key={tag}>{tag}</li>
+                    );
+                  })}
+                </ul>
+              </div>
               <figcaption className="icons">
                 <a className="icons-link" href={item.deploy} target="_blank" rel="noopener noreferrer">
                   <MdOutlineRemoveRedEye size={25} /><span>Deploy</span>
