@@ -10,7 +10,6 @@ const SecaoProjetos = styled.section`
   .card{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     padding: 1rem;
     margin-bottom: 5rem;
   }
@@ -24,6 +23,10 @@ const SecaoProjetos = styled.section`
       font-family: "PoppinsMedium";
       font-size: .8rem  ;
     }
+  }
+  .texto{
+    font-size: 13px;
+    margin-top: 5px;
   }
 
   .textoHidde{
@@ -40,7 +43,6 @@ const SecaoProjetos = styled.section`
     width: 100%;
     display: block;
     font-size: 12px;
-    margin-top: 5px;
     cursor: pointer;
     text-align: center;
     font-family: "PoppinsMedium";
@@ -69,7 +71,18 @@ const SecaoProjetos = styled.section`
   .icons{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 30px;
+  }
+
+  .icons-link{
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+    span{
+      font-family: "PoppinsMedium";
+    }
   }
 `;
 
@@ -104,7 +117,7 @@ const Projetos = () => {
             </header>
   
             <section>
-              <p className={textHidde.includes(item._id) ? "" : "textoHidde"}>
+              <p className={textHidde.includes(item._id) ? "texto" : "textoHidde texto"}>
                 {item.texto}
               </p>
               <button className="ver-mais" onClick={() => abrirOuFecharTexto(item._id)}>
@@ -115,11 +128,11 @@ const Projetos = () => {
             <figure className="imagem">
               <img src={item.imagem} alt={`Imagem do projeto ${item.titulo}`} />
               <figcaption className="icons">
-                <a href={item.deploy} target="_blank" rel="noopener noreferrer">
-                  <MdOutlineRemoveRedEye size={25} />
+                <a className="icons-link" href={item.deploy} target="_blank" rel="noopener noreferrer">
+                  <MdOutlineRemoveRedEye size={25} /><span>Deploy</span>
                 </a>
-                <a href={item.repositorio} target="_blank" rel="noopener noreferrer">
-                  <FaGithub size={20} />
+                <a className="icons-link" href={item.repositorio} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={20} /><span>Repositório</span>
                 </a>
               </figcaption>
             </figure>
