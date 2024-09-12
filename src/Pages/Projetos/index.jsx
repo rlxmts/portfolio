@@ -36,12 +36,15 @@ const SecaoProjetos = styled.section`
   }
 
   .ver-mais{
-    cursor: pointer;
-    font-family: "PoppinsMedium";
-    text-align: center;
-    display: block;
+    border: none;
     width: 100%;
+    display: block;
     font-size: 12px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-family: "PoppinsMedium";
+    background-color: transparent;
   }
 
   .titulo{
@@ -94,24 +97,34 @@ const Projetos = () => {
     <SecaoProjetos>
       {projetos.map(item => {
         return(
-          <div className="card" key={item._id}>
-            <div className="nome">
+          <article className="card" key={item._id}>
+            <header className="nome">
               <FotoPerfil />
-              <h4>rlxmts</h4>
-            </div>
-            <div>
-              <span className="titulo"> {item.titulo}</span>
-              <p className={textHidde.includes(item._id) ? "" : "textoHidde"}>{item.texto}</p>
-              <span className="ver-mais" onClick={()=> abrirOuFecharTexto(item._id) } >{textHidde.includes(item._id) ? "ver menos" : "Ver mais"}</span>
-            </div>
-            <div  className="imagem">
-              <img src={item.imagem} alt={item.titulo}/>
-              <div className="icons">
-                <a href={item.deploy} target="_blank" rel="noopener noreferrer"><MdOutlineRemoveRedEye size={25} /></a>
-                <a href={item.repositorio} target="_blank" rel="noopener noreferrer"><FaGithub size={20} /></a>        
-              </div>
-            </div>
-          </div>
+              <h2>{item.titulo}</h2>
+            </header>
+  
+            <section>
+              <p className={textHidde.includes(item._id) ? "" : "textoHidde"}>
+                {item.texto}
+              </p>
+              <button className="ver-mais" onClick={() => abrirOuFecharTexto(item._id)}>
+                {textHidde.includes(item._id) ? "Ver menos" : "Ver mais"}
+              </button>
+            </section>
+  
+            <figure className="imagem">
+              <img src={item.imagem} alt={`Imagem do projeto ${item.titulo}`} />
+              <figcaption className="icons">
+                <a href={item.deploy} target="_blank" rel="noopener noreferrer">
+                  <MdOutlineRemoveRedEye size={25} />
+                </a>
+                <a href={item.repositorio} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={20} />
+                </a>
+              </figcaption>
+            </figure>
+          </article>
+
         );
       })}
     </SecaoProjetos>
