@@ -107,7 +107,7 @@ const Projetos = () => {
   const {projetos, carregando, erro} = useBuscaProjetos();
   const [textHidde, setTextHidde] = useState([]);
 
-  if(carregando)return <p>Carregando...</p>;
+  if(carregando) return <span className="carregando"></span>;
 
   if(erro) return <p>{erro}</p>;
 
