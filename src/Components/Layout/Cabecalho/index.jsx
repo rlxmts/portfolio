@@ -1,6 +1,9 @@
 import { BsMoonStars } from "react-icons/bs";
+import { IoSunnyOutline } from "react-icons/io5";
 import Logo from "../../Common/Logo";
 import styled from "styled-components";
+import { useContext } from "react";
+import { TemaContext } from "../../../Context/temaContext";
 
 const Header = styled.header`
   display: flex; 
@@ -16,10 +19,23 @@ const Header = styled.header`
 `;
 
 const Cabecalho = () => {
+  const {trocaTema, tema} = useContext(TemaContext);
   return(
     <Header>
       <Logo />
-      <BsMoonStars className="icon-tema"/>
+      {tema === "light" ? 
+        <BsMoonStars 
+          size={15}  
+          className="icon-tema"
+          onClick={trocaTema}
+        />
+        :
+        <IoSunnyOutline 
+          size={20}  
+          className="icon-tema"
+          onClick={trocaTema}
+        />   
+      }
     </Header>
   );
 };

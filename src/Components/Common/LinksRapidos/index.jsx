@@ -12,7 +12,7 @@ const ListaLinks = styled.ul`
   row-gap: 5px;
 
   a{
-    color: #495057;
+    color: #737B82;
     font-family: "PoppinsMedium";
     display: flex;
     align-items: center;

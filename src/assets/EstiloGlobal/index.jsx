@@ -32,6 +32,8 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   *{
+    background-color: ${({ theme }) => theme.fundo};
+    color: ${({ theme }) => theme.texto};
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -41,6 +43,7 @@ const EstiloGlobal = createGlobalStyle`
     font-family: "PoppinsLight";
     font-style: none;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
   .strong{
     font-family: "PoppinsMedium";

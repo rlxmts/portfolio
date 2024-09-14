@@ -21,6 +21,7 @@ const Link = styled.a`
   .icon-linkedin{
     border-left: 1px solid #ffffff7b;
     padding-left: .5rem;
+    background-color: transparent;
   }
 
   @media screen and (max-width: 600px){
@@ -37,7 +38,7 @@ const BotaoLinkedin = ({children})=> {
       rel="noreferrer noopener"
     >
       {children}
-      <FaLinkedinIn size={20} className="icon-linkedin" />
+      <FaLinkedinIn fill="#FFFFFF" size={20} className="icon-linkedin" />
     </Link>
   );
 };

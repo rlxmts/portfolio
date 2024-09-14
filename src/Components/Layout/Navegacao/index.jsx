@@ -14,7 +14,7 @@ const ListaNav = styled.ul`
   .nav-lista-link{
     display : block ;
     font-family: "PoppinsBold";
-    color: #495057;
+    color: #737B82;
     cursor: pointer;
     padding: .5rem;
     border-bottom: 3px solid transparent;
