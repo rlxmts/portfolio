@@ -12,7 +12,7 @@ const Tecnologia = styled.h4`
 const SecaoSobre = styled.section`
 
   .opentowork{
-    color: #477433;
+    color: #44b678;
     font-family: "PoppinsMedium";
   }
 
