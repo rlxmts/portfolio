@@ -90,6 +90,7 @@ const SecaoProjetos = styled.section`
     display: flex; 
     flex-wrap: wrap;
     gap: 5px;
+    row-gap: 0;
 
     .tag{
       background-color: #022f3a;
