@@ -11,7 +11,7 @@ const SecaoProjetos = styled.section`
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
   }
 
   .nome{
@@ -56,16 +56,11 @@ const SecaoProjetos = styled.section`
 
   .imagem{
     display: block;
-    height: 300px;
     width: 100%;
 
     img{
       width: 100%;
       height: 100%;
-    }
-    
-    @media screen and (max-width: 500px){
-      height: 200px;
     }
   }
   
@@ -80,7 +75,7 @@ const SecaoProjetos = styled.section`
     display: flex;
     align-items: center;
     gap: 3px;
-    
+  
     span{
       font-family: "PoppinsMedium";
     }
