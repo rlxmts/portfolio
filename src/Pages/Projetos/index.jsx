@@ -39,6 +39,7 @@ const SecaoProjetos = styled.section`
   }
 
   .ver-mais{
+    margin-bottom: 5px;
     border: none;
     width: 100%;
     display: block;
