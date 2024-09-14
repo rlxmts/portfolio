@@ -15,6 +15,7 @@ const Header = styled.header`
 
   .icon-tema{
     cursor:pointer;
+    background-color: transparent;
   }
 `;
 
