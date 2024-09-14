@@ -46,7 +46,13 @@ const Navegacao = ()=> {
       <ListaNav>
         {links.map(item => {
           return(
-            <li key={item.nome}><NavLink className={ ({isActive}) => classNames("nav-lista-link", isActive ? "ativo" : "") } to={item.url} >{item.nome}</NavLink></li> 
+            <li key={item.nome}>
+              <NavLink 
+                className={ ({isActive}) => classNames("nav-lista-link", isActive ? "ativo" : "") } 
+                to={item.url} >
+                {item.nome}
+              </NavLink>
+            </li> 
           );
         })}
       </ListaNav>
