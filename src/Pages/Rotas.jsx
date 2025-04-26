@@ -1,8 +1,8 @@
+import EstiloGlobal from "../assets/EstiloGlobal";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cabecalho from "../Components/Layout/Cabecalho";
 import styled from "styled-components";
 import { ThemeProvider as StyledThemeProvider } from "styled-components";
-import EstiloGlobal from "../assets/EstiloGlobal";
 import Perfil from "../Components/Layout/Perfil";
 import Navegacao from "../Components/Layout/Navegacao";
 import { Container } from "../Components/Common/Container";
