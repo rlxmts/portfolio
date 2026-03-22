@@ -22,7 +22,7 @@ const Experiencias = () => {
       <p>Desenvolvedor Fullstack</p>
       <br></br>
       <h3>Descrição:</h3>
-      <p>Na Altimus sou responsavel por todas as implantações de sites dos nosso parceiros. Hoje contamos com mais de 500 sites contratados e trabalho na melhoria e implementação de novas funcionalidades também! Além disso ajudo na resolução de problemas e erros fatais vindos do Suporte N2. Atuo na configuração de servidores WHM linux, na melhoria de desempenho e na segurança dos nossos sites wordpress. Minha responsabilidades abrangem tanto front quanto back e ja pude contribuir com muita coisa legal. Vamos conversar mais um pouco sobre isso? Me chame no <LinkExterno href="https://wa.me/5521991537608" target="_blank" rel="noreferrer noopener">WhatsApp</LinkExterno></p>
+      <p>Na Altimus sou responsavel por todas as implantações de sites dos nosso parceiros. Hoje contamos com mais de 500 sites contratados e trabalho na melhoria e implementação de novas funcionalidades também! Além disso ajudo na resolução de problemas e erros fatais vindos do Suporte N2. Atuo na configuração de servidores WHM linux, na melhoria de desempenho e na segurança dos nossos sites wordpress. Minha responsabilidades abrangem tanto front quanto back e ja pude contribuir com muita coisa legal. Vamos conversar mais um pouco sobre isso? Me chame no <LinkExterno href="https://wa.me/5547996520334" target="_blank" rel="noreferrer noopener">WhatsApp</LinkExterno></p>
       </div>
       <br></br>
 
