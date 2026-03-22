@@ -31,7 +31,7 @@ const LinksRapidos = () => {
         <a href="#"><HiOutlineBriefcase size="20" />Opentowork </a>
       </li>
       <li>
-        <a href="tel:+5521991537608" target="_blank" rel="noopener noreferrer"><MdOutlinePhone size="17" />(21) 99153-7608 </a>
+        <a href="tel:+5547996520334" target="_blank" rel="noopener noreferrer"><MdOutlinePhone size="17" />(47) 99652-0334 </a>
       </li>
       <li>
         <a href="https://github.com/rlxmts" target="_blank" rel="noopener noreferrer"> <FaGithub size="17" /> GitHub</a>
