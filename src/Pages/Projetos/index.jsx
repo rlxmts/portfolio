@@ -106,7 +106,8 @@ const Projetos = () => {
 
   if(carregando) return <span className="carregando"></span>;
 
-  if(erro) return <p>{erro}</p>;
+  // if(erro) return <p>{erro}</p>;
+  if(erro) return <p>Estou fazendo algumas alterações no momento.</p>;
 
   const abrirOuFecharTexto = (id) => {
     setTextHidde((prevState) => {
