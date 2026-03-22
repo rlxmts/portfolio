@@ -14,7 +14,7 @@ export const useBuscaProjetos = () => {
       try{
         setCarregando(true);
         const projetosDaApi = await axios.get("https://api-portfolio-2.vercel.app/projetos");
-        setProjetos(projetosDaApi.data.Posts);
+        setProjetos(projetosDaApi.data)
       }catch(erro){
         setCarregando(false);
         setErro(`Ops parece que houve um erro ao carregar os projetos: ${erro}`);
