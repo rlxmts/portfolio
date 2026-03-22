@@ -13,7 +13,7 @@ export const useBuscaProjetos = () => {
 
       try{
         setCarregando(true);
-        const projetosDaApi = await axios.get("https://api-portfolio-2-nkolqyd8s-matheus-cruzs-projects-85e5e7a0.vercel.app/projetos");
+        const projetosDaApi = await axios.get("https://api-portfolio-2.vercel.app/projetos");
         setProjetos(projetosDaApi.data.Posts);
       }catch(erro){
         setCarregando(false);
