@@ -29,7 +29,7 @@ const Rodape = ()=> {
     <Footer>
       <ListaFooter>
         <li>
-          <a href="https://wa.me/5521991537608"
+          <a href="https://wa.me/5547996520334"
             target="_blank"
             rel="noopener noreferrer"
           >
